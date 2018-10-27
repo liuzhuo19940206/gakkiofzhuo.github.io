@@ -202,6 +202,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = '标签集合'
+    }
+</script>
+
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -500,5 +509,27 @@ $(function(){
 </script>
 <script src="/js/comment/leancloud.js"></script>
 
+
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Fri Oct 26 2018 19:42:55 GMT+0800'
+      window.commentConfig.owner = 'gakkiofzhuo'
+      window.commentConfig.repo = 'gakkiofComment'
+      window.commentConfig.client_id = 'bd259dac9237aacc46de# 必填项'
+      window.commentConfig.client_secret = '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项'
+      window.commentConfig.redirect_uri = 'https://gakkiofzhuo.github.io/'
+    } else {
+      window.commentConfig = {
+      	id: 'Fri Oct 26 2018 19:42:55 GMT+0800',
+        owner: 'gakkiofzhuo',
+        repo: 'gakkiofComment',
+        client_id: 'bd259dac9237aacc46de# 必填项',
+        client_secret: '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项',
+        redirect_uri: 'https://gakkiofzhuo.github.io/'
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>

@@ -221,7 +221,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview5.jpg'
+        var defaultPreview = '/imgs/preview/preview7.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -641,5 +641,27 @@ $(function(){
 </script>
 <script src="/js/comment/leancloud.js"></script>
 
+
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Fri Oct 26 2018 19:39:08 GMT+0800'
+      window.commentConfig.owner = 'gakkiofzhuo'
+      window.commentConfig.repo = 'gakkiofComment'
+      window.commentConfig.client_id = 'bd259dac9237aacc46de# 必填项'
+      window.commentConfig.client_secret = '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项'
+      window.commentConfig.redirect_uri = 'https://gakkiofzhuo.github.io/'
+    } else {
+      window.commentConfig = {
+      	id: 'Fri Oct 26 2018 19:39:08 GMT+0800',
+        owner: 'gakkiofzhuo',
+        repo: 'gakkiofComment',
+        client_id: 'bd259dac9237aacc46de# 必填项',
+        client_secret: '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项',
+        redirect_uri: 'https://gakkiofzhuo.github.io/'
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
