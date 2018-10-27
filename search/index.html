@@ -37,7 +37,7 @@
     <script>
       AV.init({
         appId: 'Gxhj6I4pE61SXGJliQkQzeKL-gzGzoHsz',
-        appKey: 'q2mJpeLueoVfHytP4FWxsIUM# your appKey'
+        appKey: 'q2mJpeLueoVfHytP4FWxsIUM'
       })
     </script>
     
@@ -197,7 +197,7 @@
     var p = query.length > 1 ? query[1].split('=')[1] : 1
     // 获取每页的页码数
     var pageSize = '10'
-    var useLeancloud = 'q2mJpeLueoVfHytP4FWxsIUM# your appKey'
+    var useLeancloud = 'q2mJpeLueoVfHytP4FWxsIUM'
     $.getJSON('/content.json', function (json) {
       $('#search-breadcrumb').append(`搜索'${s}'的结果`)
       var result = getArticles(s, 'posts', json).concat(getArticles(s, 'pages', json))
@@ -221,7 +221,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview4.jpg'
+        var defaultPreview = '/imgs/preview/preview8.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
