@@ -14,7 +14,10 @@
     
     <title>归档 | Gakki酱</title>
     <link href="”https://gakkiofzhuo.github.io“" rel="”prefetch”">
-
+	
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="bookmark" href="/favicon.ico">
+	
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/aos.css">
 <link rel="stylesheet" href="/css/style.css">
@@ -45,7 +48,7 @@
       if (document.images) {
         var avatar = new Image();
         avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg,preview11.jpg,preview12.jpg,preview13.jpg,preview14.jpg,preview15.jpg,preview15.jpg,preview16.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg,preview11.jpg,preview12.jpg,preview13.jpg,preview14.jpg,preview15.jpg,preview15.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -69,24 +72,6 @@
     </ul>
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
-    
-    <div class="gal-menu gal-dropdown">
-    <div class="circle" id="gal">
-        <div class="ring">
-            <a href="https://gakkiofzhuo.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
-            
-            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
-            
-            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
-            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
-            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
-            
-            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
-            
-        </div>
-        <audio id="audio" src="/imgs/oni.mp3"></audio>
-    </div>
-</div>
     
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
@@ -132,20 +117,58 @@
                 
                 
                 
-                <li class="">
-                    <a href="/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/类别/">类别</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/github/">github</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/hexo/">hexo</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 
-                <li class="">
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/标签/">标签</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/github/">github</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/hexo/">hexo</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -200,7 +223,11 @@
             
              
              
-                        <a href="/2018/10/26/hello-world/">Hello World</a>
+                        <a href="/2018/10/27/hexo-github搭建个人独立博客/">hexo+github搭建个人独立博客</a>
+                        <br>
+            
+             
+                        <a href="/2018/10/27/一台电脑使用两个Github账号/">一台电脑使用两个Github账号</a>
                         <br>
             
                     </div>
@@ -274,7 +301,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/10/26/hello-world/">Hello World</a>
+                    <a href="/2018/10/27/hexo-github搭建个人独立博客/">hexo+github搭建个人独立博客</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/一台电脑使用两个Github账号/">一台电脑使用两个Github账号</a>
                 </span>
             </li>
             
@@ -296,7 +329,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2018/10/26/hello-world/">Hello World</a>
+                    <a href="/2018/10/27/hexo-github搭建个人独立博客/">hexo+github搭建个人独立博客</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/10/27/一台电脑使用两个Github账号/">一台电脑使用两个Github账号</a>
                 </span>
             </li>
             
@@ -320,6 +359,12 @@
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/标签/" style="font-size: 17.984641906353303px;" class="tag-cloud-link">标签</a>
+    
+    <a href="/tags/github/" style="font-size: 18.975231845433797px;" class="tag-cloud-link">github</a>
+    
+    <a href="/tags/hexo/" style="font-size: 19.59527593879117px;" class="tag-cloud-link">hexo</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -495,8 +540,6 @@ $(function(){
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
 
-<script src="/js/oni.js"></script>
-
 
 <script>
     window.hot_posts_count = '10'
@@ -504,27 +547,5 @@ $(function(){
 </script>
 <script src="/js/comment/leancloud.js"></script>
 
-
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-    if(window.commentConfig) {
-      window.commentConfig.id = ''
-      window.commentConfig.owner = 'gakkiofzhuo'
-      window.commentConfig.repo = 'gakkiofComment'
-      window.commentConfig.client_id = 'bd259dac9237aacc46de# 必填项'
-      window.commentConfig.client_secret = '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项'
-      window.commentConfig.redirect_uri = 'https://gakkiofzhuo.github.io/'
-    } else {
-      window.commentConfig = {
-      	id: '',
-        owner: 'gakkiofzhuo',
-        repo: 'gakkiofComment',
-        client_id: 'bd259dac9237aacc46de# 必填项',
-        client_secret: '6a365795bcee4cc065a028d5f92f95f5a357525c# 必填项',
-        redirect_uri: 'https://gakkiofzhuo.github.io/'
-      }
-    }
-</script>
-<script src="/js/comment/gitment.js"></script>
 
 </html>
