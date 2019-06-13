@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-12T13:34:21.018Z</updated>
+  <updated>2019-06-13T13:23:47.121Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gakki的图集</title>
+    <link href="/2019/06/13/gakki%E7%9A%84%E5%9B%BE%E9%9B%86/"/>
+    <id>/2019/06/13/gakki的图集/</id>
+    <published>2019-06-13T09:02:50.000Z</published>
+    <updated>2019-06-13T13:23:47.121Z</updated>
+    
+    <summary type="html">
+    
+      热爱生活的人
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="图集" scheme="/tags/%E5%9B%BE%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>人间失格</title>
     <link href="/2018/11/08/%E4%BA%BA%E9%97%B4%E5%A4%B1%E6%A0%BC/"/>
     <id>/2018/11/08/人间失格/</id>
     <published>2018-11-08T13:28:43.000Z</published>
-    <updated>2019-06-12T13:34:21.018Z</updated>
+    <updated>2019-06-13T13:13:15.479Z</updated>
     
     <summary type="html">
     
@@ -41,7 +61,7 @@
     <link href="/2018/11/05/%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%90%90%E4%BA%8B/"/>
     <id>/2018/11/05/生活中的那些琐事/</id>
     <published>2018-11-05T09:49:36.000Z</published>
-    <updated>2019-06-12T13:41:07.759Z</updated>
+    <updated>2019-06-13T13:14:22.891Z</updated>
     
     <summary type="html">
     
@@ -61,7 +81,7 @@
     <link href="/2018/10/29/%E9%A3%9E%E8%A1%8C%E5%91%98/"/>
     <id>/2018/10/29/飞行员/</id>
     <published>2018-10-29T01:49:36.000Z</published>
-    <updated>2019-06-12T13:48:44.665Z</updated>
+    <updated>2019-06-13T13:13:45.599Z</updated>
     
     <summary type="html">
     
@@ -81,7 +101,7 @@
     <link href="/2018/10/27/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
     <id>/2018/10/27/hexo-github搭建个人独立博客/</id>
     <published>2018-10-27T07:09:35.000Z</published>
-    <updated>2019-06-12T13:39:58.454Z</updated>
+    <updated>2019-06-13T13:12:15.759Z</updated>
     
     <summary type="html">
     
@@ -101,7 +121,7 @@
     <link href="/2018/10/27/%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AAGithub%E8%B4%A6%E5%8F%B7/"/>
     <id>/2018/10/27/一台电脑使用两个Github账号/</id>
     <published>2018-10-27T03:33:29.000Z</published>
-    <updated>2019-06-12T13:52:21.898Z</updated>
+    <updated>2019-06-13T13:12:40.424Z</updated>
     
     <summary type="html">
     
