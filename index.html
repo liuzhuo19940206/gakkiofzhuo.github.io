@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
   
   <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all"> -->
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
   <link rel="stylesheet" href="/css/lib.min.css" media="all">
@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
   <link rel="stylesheet" href="/css/zoom.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+  
+    <script src="/libs/others/clicklove.js"></script>
+  
 <!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
 " type="text/css" media="all"> -->
   <script>
@@ -29,8 +32,8 @@
    * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
    * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
    */
-  mashiro_option.email_domain = "";
-  mashiro_option.email_name = "";
+  mashiro_option.email_domain = "575920824@qq.com";
+  mashiro_option.email_name = "樱花宅";
   mashiro_option.cookie_version_control = "";
   mashiro_option.qzone_autocomplete = false;
   mashiro_option.site_name = "桜の季節刘小宅";
@@ -38,7 +41,7 @@
   mashiro_option.site_url = "/";
   mashiro_option.v_appId = "Gxhj6I4pE61SXGJliQkQzeKL-gzGzoHsz";
   mashiro_option.v_appKey = "q2mJpeLueoVfHytP4FWxsIUM";
-  mashiro_option.mathjax = "0";
+  mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
@@ -260,7 +263,7 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/tags/悦读/">
+                        <a href="/tags/阅读/">
                           <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
                           书单
                         </a>
@@ -281,7 +284,7 @@
                       </li>
                     
                       <li>
-                        <a href="/tags/图集/">
+                        <a href="/photo/">
                           <i class="fa fa-photo" aria-hidden="true"></i>
                           图集
                         </a>
@@ -647,7 +650,7 @@
 
 
     </main>
-      <!-- 首页默认取最最新文章集 -->
+    <!-- 首页默认取最最新文章集 -->
     <!--  -->
   </div>
   
@@ -690,6 +693,8 @@
     </div>
   </div>
 </footer> -->
+
+
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
     <div class="footertext">
@@ -697,17 +702,50 @@
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
       </div>
-      <p style="color: #666666;">&copy 2018</p>
+      <p style="color: #666666;">&copy 2018-2019</p>
+      <p style="color: #666666;">本小宅已经营业: <span id="jishu" style="color: #FF6EB4;">21289842</span> 秒</p>
     </div>
+      <div class="col s12 m8 l8 copy-right">
+     
+     
+          <br>
+          
+          <span id="busuanzi_container_site_pv">
+              <i class="fa fa-heart-o"></i>
+              本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+          </span>
+          
+          
+          <span id="busuanzi_container_site_uv">
+              <i class="fa fa-users"></i>
+              次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+          </span>
+          
+      
+  </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages
+        <span style="color: #b9b9b9;">Theme <a href="https://github.com/gakkiofzhuo/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, Powered by Hexo, Hosted by Coding Pages
         </span>
       </p>
     </div>
-  </div><!-- .site-info -->
+  </div>
 </footer>
 
+<!-- 计数的js，如果觉得耗时，就注释掉吧，一个鸡肋的功能。-->
+<script>
+   var now = new Date().getFullYear();
+   var s1 = new Date('2018-10-10');
+   var second = Math.floor((new Date() - s1)/1000);
+   
+   function jishu(){
+   document.getElementById('jishu').innerText = second;
+   second++;
+   //console.log(second);
+  }
+  var result = window.setInterval(jishu,1000);
+  
+</script>
 
 
 <!-- <script src="/js/tocbot.js"></script> -->
@@ -870,7 +908,7 @@ $(document).ready(function() {
           <ul class="sub-menu">
             
               <li>
-                <a href="/tags/悦读/">
+                <a href="/tags/阅读/">
                   <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
                   书单
                 </a>
@@ -891,7 +929,7 @@ $(document).ready(function() {
               </li>
             
               <li>
-                <a href="/tags/图集/">
+                <a href="/photo/">
                   <i class="fa fa-photo" aria-hidden="true"></i>
                   图集
                 </a>
