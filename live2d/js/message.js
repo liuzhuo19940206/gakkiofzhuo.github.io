@@ -6,7 +6,8 @@ var norunAI = [ "android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowse
 var norunFlag = false;
 
 
-for(var i=0;i<norunai.length;i++){ if(useragent.indexof(norunai[i])=""> -1){
+for(var i=0;i<norunAI.length;i++){
+	if(userAgent.indexOf(norunAI[i]) > -1){
 		norunFlag = true;
 		break;
 	}
@@ -124,7 +125,27 @@ if(!norunFlag){
 		}else {
 			if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
 				var now = (new Date()).getHours();
-				if ( now > 23 || now <= 5="" )="" {="" text="你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？" ;="" }="" else="" if="" (now=""> 5 && now <= 7)="" {="" text="早上好！一日之计在于晨，美好的一天就要开始了！" ;="" }="" else="" if="" (now=""> 7 && now <= 11)="" {="" text="上午好！工作顺利嘛，不要久坐，多起来走动走动哦！" ;="" }="" else="" if="" (now=""> 11 && now <= 14)="" {="" text="中午了，工作了一个上午，现在是午餐时间！" ;="" }="" else="" if="" (now=""> 14 && now <= 17)="" {="" text="午后很容易犯困呢，今天的运动目标完成了吗？" ;="" }="" else="" if="" (now=""> 17 && now <= 19)="" {="" text="傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~" ;="" }="" else="" if="" (now=""> 19 && now <= 21)="" {="" text="晚上好，今天过得怎么样？" ;="" }="" else="" if="" (now=""> 21 && now <= 23)="" {="" text="已经这么晚了呀，早点休息吧，晚安~~" ;="" }="" else="" }else="" +="" document.title.split('="" -="" ')[0]="" '="" 」<="" span="">';
+				if (now > 23 || now <= 5) {
+					text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+				} else if (now > 5 && now <= 7) {
+					text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+				} else if (now > 7 && now <= 11) {
+					text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+				} else if (now > 11 && now <= 14) {
+					text = '中午了，工作了一个上午，现在是午餐时间！';
+				} else if (now > 14 && now <= 17) {
+					text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+				} else if (now > 17 && now <= 19) {
+					text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+				} else if (now > 19 && now <= 21) {
+					text = '晚上好，今天过得怎么样？';
+				} else if (now > 21 && now <= 23) {
+					text = '已经这么晚了呀，早点休息吧，晚安~~';
+				} else {
+					text = '嗨~ 快来逗我玩吧！';
+				}
+			}else {
+				text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
 			}
 		}
 		showMessage(text, 12000);
@@ -315,7 +336,50 @@ if(!norunFlag){
 			var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
 			var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
 			if(live2dBGM_Num){
-				if(live2dBGM_Num<=$('input[name=live2dbgm]').length-1){ bgmplaynow="parseInt(live2dBGM_Num);" }="" if(live2dbgm_playtime){="" bgmplaytime="parseInt(live2dBGM_PlayTime);" var="" live2dbgmsrc="bgmListInfo.eq(bgmPlayNow).val();" $('#live2d_bgm').attr('data-bgm',bgmplaynow);="" $('#live2d_bgm').attr('src',live2dbgmsrc);="" $('#live2d_bgm')[0].currenttime="bgmPlayTime;" $('#live2d_bgm')[0].volume="0.5;" live2dbgm_isplay="sessionStorage.getItem("live2dBGM_IsPlay");" live2dbgm_windowclose="sessionStorage.getItem("live2dBGM_WindowClose");" if(live2dbgm_isplay="=" '0'="" &&="" '0'){="" $('#live2d_bgm')[0].play();="" $('#musicbutton').addclass('play');="" sessionstorage.setitem("live2dbgm_windowclose"="" ,="" '1');="" $('#musicbutton').on('click',function(){="" if($('#musicbutton').hasclass('play')){="" $('#live2d_bgm')[0].pause();="" $('#musicbutton').removeclass('play');="" sessionstorage.setitem("live2dbgm_isplay",'1');="" }else{="" sessionstorage.setitem("live2dbgm_isplay",'0');="" });="" window.onbeforeunload="function(){" '0');="" document.getelementbyid('live2d_bgm').addeventlistener("timeupdate",="" function(){="" live2dbgmplaytimenow="document.getElementById('live2d_bgm').currentTime;" sessionstorage.setitem("live2dbgm_playtime"="" );="" document.getelementbyid('live2d_bgm').addeventlistener("ended",="" listnow="parseInt($('#live2d_bgm').attr('data-bgm'));" ++="" ;="" if(listnow=""> $('input[name=live2dBGM]').length-1){
+				if(live2dBGM_Num<=$('input[name=live2dBGM]').length-1){
+					bgmPlayNow = parseInt(live2dBGM_Num);
+				}
+			}
+			if(live2dBGM_PlayTime){
+				bgmPlayTime = parseInt(live2dBGM_PlayTime);
+			}
+			var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+			$('#live2d_bgm').attr('data-bgm',bgmPlayNow);
+			$('#live2d_bgm').attr('src',live2dBGMSrc);
+			$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+			$('#live2d_bgm')[0].volume = 0.5;
+			var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+			var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+			if(live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0'){
+				$('#live2d_bgm')[0].play();
+				$('#musicButton').addClass('play');
+			}
+			sessionStorage.setItem("live2dBGM_WindowClose" , '1');
+			$('#musicButton').on('click',function(){
+				if($('#musicButton').hasClass('play')){
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					sessionStorage.setItem("live2dBGM_IsPlay",'1');
+				}else{
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+					sessionStorage.setItem("live2dBGM_IsPlay",'0');
+				}
+			});
+			window.onbeforeunload = function(){ 
+			 	sessionStorage.setItem("live2dBGM_WindowClose" , '0');
+				if($('#musicButton').hasClass('play')){
+					sessionStorage.setItem("live2dBGM_IsPlay",'0');
+				}
+			} 
+			document.getElementById('live2d_bgm').addEventListener("timeupdate", function(){
+				var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+				sessionStorage.setItem("live2dBGM_PlayTime" , live2dBgmPlayTimeNow );
+			});
+			document.getElementById('live2d_bgm').addEventListener("ended", function(){
+				var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				listNow ++ ;
+				if(listNow > $('input[name=live2dBGM]').length-1){
 					listNow = 0;
 				}
 				var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
@@ -424,4 +488,29 @@ if(!norunFlag){
 		var images = [];
 		var imgLength = AIimgSrc.length;
 		var loadingNum = 0;
-		for(var i=0;i</=$('input[name=live2dbgm]').length-1){></=></=></=></=></=></=></=></=></norunai.length;i++){>
+		for(var i=0;i<imgLength;i++){
+			images[i] = new Image();
+			images[i].src = AIimgSrc[i];
+			images[i].onload = function(){
+				loadingNum++;
+				if(loadingNum===imgLength){
+					var live2dhidden = localStorage.getItem("live2dhidden");
+					if(live2dhidden==="0"){
+						setTimeout(function(){
+							$('#open_live2d').fadeIn(200);
+						},1300);
+					}else{
+						setTimeout(function(){
+							$('#landlord').fadeIn(200);
+						},1300);
+					}
+					setTimeout(function(){
+						loadlive2d("live2d", message_Path+LoadingModelJson[fukuType]);
+					},1000);
+					initLive2d ();
+					images = null;
+				}
+			}
+		}
+	});
+}
