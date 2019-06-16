@@ -20,7 +20,7 @@
 	line-height:24px;
 	font-size:12px;
 	position:fixed;
-	left:5px;
+	right:5px;
 	bottom:5px;
 	z-index:10000;
 	cursor:pointer;
@@ -202,9 +202,6 @@
 }
 .live_ico_item.type_youdu{
 	background-image:url(../images/youdu.png);
-}
-.live_ico_item.type_huanzhuang{
-	background-image:url(../images/huanzhuang.png);
 }
 .live_ico_item.type_music.play{
 	background-image:url(../images/pasue.png);
