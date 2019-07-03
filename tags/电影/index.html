@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">search | 毎秒5センチ</title>
+  <title itemprop="name">Tag: 电影 | 毎秒5センチ</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -435,59 +435,110 @@ var talkAPI = "http://www.tuling123.com/openapi/api";//如果有类似图灵机�
   </div>
 </header>
 
-        <div class="pattern-center-blank"></div>
+      
+
+<div class="pattern-center-blank"></div>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="电影.img" class="lazyload" onerror="imgMyError(this,4)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+  </div> 
+  <header class="pattern-header ">
+    <h1 class="cat-title">电影</h1>
+  </header>
+</div>
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      
+  <!-- 首页默认取最最新文章集 -->
   
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
-      <!-- .entry-content -->
-      
-<div id="vcomments"></div>
+    
+
+<article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2019/06/19/海街日记/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
+        </div>
+        <img width="150" height="150" src="https://ae01.alicdn.com/kf/HTB1J1zOdlCw3KVjSZFlq6AJkFXa9.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2019/06/19/海街日记/">
+    海街日记</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2019-6-19</div>
+    <p>
+    热爱生活的人</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2019/06/19/海街日记/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+      <div class="info-meta">
+        <div class="comnum">
+          <span>
+            <i class="iconfont icon-mark"></i>
+            <span class="dsq-postid"> N 条评论 </span>
+          </span>
+        </div>
+        <div class="views">
+          <span>
+              <i class="iconfont icon-attention"></i>
+              <span id="/2019/06/19/海街日记/" class="leancloud_visitors">热度：<span class="leancloud-visitors-count"></span>
+              </span>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <hr>
+
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
+    
+  </div>
+</div>
+
+<!-- 修改tag默认的图片-->
 <script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "Gxhj6I4pE61SXGJliQkQzeKL-gzGzoHsz",
-        appKey: "q2mJpeLueoVfHytP4FWxsIUM",
-        notify: 'false' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'identicon',
-        pageSize: '10',
-        path: window.location.pathname,
-        placeholder: '你是我一生只会遇见一次的惊喜 ...'
-      })
+function imgMyError (ele, type) {
+  switch (type) {
+    case 1:
+      if (ele.src.includes('https://cn.gravatar.com/avatar')) {
+        ele.src = ele.src.replace('https://cn.gravatar.com/avatar/', 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/gravatar.jpg')
+      } else {
+        ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_avatar.jpg'
+      }
+      break
+    case 2:
+      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/default_gavatar.jpg'
+      break
+    case 3:
+      ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/image-404.png'
+      break
+    case 4:
+      ele.src = 'http://ww1.sinaimg.cn/large/c5582837gy1g3zm5v3flnj21lf0rs1kx.jpg'
+      break
+      default:
+        ele.src = 'http://ww1.sinaimg.cn/large/c5582837gy1g3zm5v3flnj21lf0rs1kx.jpg'
   }
+}
 </script>
-
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
-      <!-- #post-## -->
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="/images/avatar.jpg" itemprop="image" alt="刘小宅" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="/" itemprop="url" rel="author">刘小宅</a>
-            </h3>
-          </div>
-        </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>未来は私が欲しい未来ではありません</p>
-      </section>
-  </div><!-- #primary -->
-
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

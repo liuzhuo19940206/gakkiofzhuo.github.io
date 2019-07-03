@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-06-18T09:01:49.550Z</updated>
+  <updated>2019-07-03T15:25:33.555Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>致奋斗中的你</title>
+    <link href="/2019/07/03/%E8%87%B4%E5%A5%8B%E6%96%97%E4%B8%AD%E7%9A%84%E4%BD%A0/"/>
+    <id>/2019/07/03/致奋斗中的你/</id>
+    <published>2019-07-03T15:30:00.000Z</published>
+    <updated>2019-07-03T15:25:33.555Z</updated>
+    
+    <summary type="html">
+    
+      不管你是高考生、考研生、工作生，希望你们能勿忘初心，实现梦想
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="阅读" scheme="/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>海街日记</title>
+    <link href="/2019/06/19/%E6%B5%B7%E8%A1%97%E6%97%A5%E8%AE%B0/"/>
+    <id>/2019/06/19/海街日记/</id>
+    <published>2019-06-19T02:10:50.000Z</published>
+    <updated>2019-06-19T03:43:28.804Z</updated>
+    
+    <summary type="html">
+    
+      热爱生活的人
+    
+    </summary>
+    
+      <category term="电影" scheme="/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+      <category term="电影" scheme="/tags/%E7%94%B5%E5%BD%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>纪念第一条说说</title>
