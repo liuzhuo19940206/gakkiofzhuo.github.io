@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2019-07-20T03:27:39.979Z</updated>
+  <updated>2019-09-21T01:21:38.595Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>北漂的日子</title>
+    <link href="/2019/09/21/%E5%8C%97%E6%BC%82%E7%9A%84%E6%97%A5%E5%AD%90/"/>
+    <id>/2019/09/21/北漂的日子/</id>
+    <published>2019-09-20T23:44:21.000Z</published>
+    <updated>2019-09-21T01:21:38.595Z</updated>
+    
+    <summary type="html">
+    
+      一个多月北漂的日子
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="阅读" scheme="/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>gakki的真实实拍</title>
     <link href="/2019/07/20/gakki%E7%9A%84%E7%9C%9F%E5%AE%9E%E5%AE%9E%E6%8B%8D/"/>
     <id>/2019/07/20/gakki的真实实拍/</id>
     <published>2019-07-20T02:37:30.000Z</published>
-    <updated>2019-07-20T03:27:39.979Z</updated>
+    <updated>2019-07-20T05:57:02.707Z</updated>
     
     <summary type="html">
     
